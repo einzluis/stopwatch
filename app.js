@@ -1,4 +1,4 @@
-// timer vars
+// timer variables
 let hr = min = sec = millisec = `0${0}`, startTimer;
 
 // buttons
