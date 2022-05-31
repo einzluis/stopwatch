@@ -11,12 +11,12 @@ html{
 }
 
 body{
-    background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: auto;
 
+    height: auto;
+    background: tomato;
     min-height: 100vh;
     min-height: fill-available;
     min-height: -webkit-fill-available;
@@ -24,4 +24,60 @@ body{
 
 .container{
     user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #fff;
+    height: 100px;
+    padding: 0 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 1px black;
+}
+
+#time span{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+}
+
+#time .colon{
+    width: 1rem;
+}
+
+#buttons button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: #fff;
+
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight:bold;
+
+    margin-top: 1rem;
+    padding: 10px;
+
+    box-shadow: 1px 1px 3px black;
+    border-radius: 5px;
+
+    transition: all .2s;
+}
+
+#buttons button:hover{
+    background: rgb(0, 0, 0);
+    color: #fff;
+}
+
+#buttons button.active,
+#buttons button.pause_active{
+    cursor: not-allowed;
+    opacity: 0.8;
 }
